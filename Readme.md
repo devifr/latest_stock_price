@@ -18,6 +18,7 @@ bundle install
 require 'my_stock_price_lib'
 
 api_key = "YOUR_RAPIDAPI_KEY"
+
 stock_price = LatestStockPrice::Api.new(api_key)
 
 puts stock_price.price_all
